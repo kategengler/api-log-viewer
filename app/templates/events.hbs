@@ -1,6 +1,6 @@
 {{input placeholder="Filter by email" value=email}}
 {{#link-to "events" (query-params email=email) class="btn"}}Filter{{/link-to}}
-{{#link-to "events" (query-params email="") class="btn"}}Reset{{/link-to}}
+<a href="#" {{action "reset"}}>Reset</a>
 <div class="row">
   <div class="column">
     <ul class="events">
